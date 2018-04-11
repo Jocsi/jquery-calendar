@@ -1,0 +1,215 @@
+li{
+    list-style: none;
+}
+.jquery-calendar {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #00625A;
+    position: relative;
+}
+.jquery-calendar .calendar-top {
+    width: 270px;
+    text-align: left;
+    border-top: 1px solid #009F95;
+    background-color: #009F95;
+    padding: 5px;
+    color: #fff;
+}
+.calendar-top a {
+    cursor: pointer;
+    width: 20px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+}
+.calendar-top a:hover {
+    background-color: #00C1B3;
+}
+.calendar-top .dropdown-chprev {
+    float: left;
+}
+.calendar-top .icon {
+    font-size: 14px;
+    margin-left: 3px;
+}
+.calendar-top .calendar-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+}
+.calendar-top .calendar-dropdown:last-child {
+    margin-right: 0;
+}
+.calendar-dropdown label {
+    cursor: pointer;
+}
+.calendar-dropdown .dropdown-btn {
+    position: relative;
+    height: 20px;
+    width: auto;
+    display: block;
+}
+.dropdown-btn .iconfont {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 12px;
+    margin: -17px 0 0 -14px;
+}
+.calendar-dropdown .dropdown-list {
+    box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+    width: 121px;
+    text-align: center;
+    background-color: #009F95;
+    position: absolute;
+    top: 24px;
+    left: -1px;
+    display: none;
+    z-index: 30000;
+}
+.calendar-dropdown .small {
+    width: 99px;
+    left: 15px;
+    padding: 0 0 5px 0;
+}
+.calendar-dropdown .small li {
+    width: 42px;
+    margin: 5px 0 0 5px;
+}
+.calendar-dropdown .show {
+    display: block;
+}
+.dropdown-list ul {
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+}
+.dropdown-list ul li {
+    float: left;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.dropdown-list .item {
+    width: 42px;
+}
+.dropdown-list ul li.laydate_click {
+    background-color: rgb(1, 138, 129);
+    cursor: default;
+}
+.dropdown-list ul li.laydate_click:hover {
+    background-color: rgb(1, 105, 98);
+}
+.dropdown-list ul li:hover {
+    background-color: #00C1B3;
+    color: #fff;
+}
+.calendar-top input {
+    width: 64px;
+    background: none!important;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.calendar-table table {
+    border-collapse:collapse;
+    border-spacing: 0px;
+}
+.calendar-table table tbody td, .calendar-table table thead th {
+    width: 38px;
+    height: 34px;
+    cursor: pointer;            
+}
+.calendar-table table thead th{
+    border-bottom: 1px solid #ccc;
+    line-height: 21px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+.calendar-table table tbody td {
+    vertical-align: top;
+    position: relative;
+}
+.calendar-table table td:hover {
+    background-color: #00C1B3;
+}
+.calendar-table>table .not-in-month {
+    color: #999;
+}
+.calendar-table>table .disable {
+    color: #999;
+    cursor: not-allowed;
+}
+.calendar-table>table .disable:hover {
+    background-color: #fff;
+}
+.calendar-table table .today {
+    background-color: #d0d0d0;
+}
+.calendar-table table .selected {
+    background-color: #04948a;
+    color: #e8e8e8;
+}
+.calendar-table table .selected:after {
+    content: '休';
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    color: #e8e8e8;
+}
+.jquery-calendar .shadow {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #aaaaaa;
+    opacity: .7;
+    width: 280px;
+    height: 100%;
+}
+.shadow > div {
+    background-color: #279fcf;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 130px 2px 2px -15px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    border: 2px solid #000;
+    border-bottom-color: transparent;
+    height: 25px;
+    width: 25px;
+    background: transparent !important;
+    display: inline-block;
+    -webkit-animation: rotate 0.75s 0s linear infinite;
+    animation: rotate 0.75s 0s linear infinite;
+}
+@keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg) scale(1);
+              transform: rotate(0deg) scale(1); 
+    }
+  
+    50% {
+      -webkit-transform: rotate(180deg) scale(0.6);
+              transform: rotate(180deg) scale(0.6); 
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+              transform: rotate(360deg) scale(1); 
+    } 
+}

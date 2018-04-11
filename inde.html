@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-plugin-calendar.js"></script>
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/jquery-plugin-calendar.css">
+    <script>
+        $(function(){
+            $("#calendar").calendar({
+                url: './data.json'
+            });
+            
+            $('.getSelected').click(function() {
+                console.log($("#calendar").calendar('getSelected'))
+            });
+
+            $('.getChangeList').click(function() {
+                console.log($("#calendar").calendar('getChangeList'))
+            });
+        })
+    </script>
+</head>
+<body>
+    <div id="calendar"></div>
+    <button class="getSelected">获取选中的</button>
+    <button class="getChangeList">获取变更列表</button>
+</body>
+</html>
